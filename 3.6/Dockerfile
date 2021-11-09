@@ -1,6 +1,6 @@
 FROM python:3.6-slim
 LABEL org.opencontainers.image.authors="mihai.bogdan.eugen@gmail.com"
-LABEL version="0.0.4"
+LABEL version="0.0.5"
 
 RUN apt-get -y update && apt-get -y install libxml2 libxml2-dev libxslt-dev gcc \
   && pip install pytest \

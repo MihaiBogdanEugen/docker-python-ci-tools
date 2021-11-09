@@ -22,10 +22,6 @@ Available tags:
 
 * `3.6`, `3.6-alpine`
 
-## Build process
-
-The Docker files are stored in directories for each image version. Docker Hub builds new images automatically when this repository or the Python base images are updated.
-
 ## License
 
 The Docker files are licensed under the MIT license, see LICENSE for details.

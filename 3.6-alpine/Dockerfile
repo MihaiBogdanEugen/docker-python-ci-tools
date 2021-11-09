@@ -1,5 +1,5 @@
 FROM python:3.6-alpine
-LABEL org.opencontainers.image.authors="mbe1224@gmail.com"
+LABEL org.opencontainers.image.authors="mihai.bogdan.eugen@gmail.com"
 
 RUN apk add --no-cache libxml2 libxml2-dev libxslt-dev gcc build-base --virtual build-dependencies \
   && pip install pytest \

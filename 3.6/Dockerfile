@@ -1,5 +1,5 @@
 FROM python:3.6-slim
-LABEL org.opencontainers.image.authors="mbe1224@gmail.com"
+LABEL org.opencontainers.image.authors="mihai.bogdan.eugen@gmail.com"
 
 RUN apt-get -y update && apt-get -y install libxml2 libxml2-dev libxslt-dev gcc \
   && pip install pytest \

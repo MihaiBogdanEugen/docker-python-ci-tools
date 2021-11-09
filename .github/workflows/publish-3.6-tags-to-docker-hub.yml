@@ -32,11 +32,15 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: docker.io/mbe1224/python-ci-tools:3.6
-      -
-        name: Build and push 3.6-alpine
-        uses: docker/build-push-action@v2
-        with:
-          context: ./3.6-alpine/
-          push: true
-          platforms: linux/amd64,linux/arm64
-          tags: docker.io/mbe1224/python-ci-tools:3.6-alpine
+          cache-from: type=registry,ref=mbe1224/python-ci-tools:3.6-buildcache
+          cache-to: type=registry,ref=mbe1224/python-ci-tools:3.6-buildcache,mode=max
+      # -
+      #   name: Build and push 3.6-alpine
+      #   uses: docker/build-push-action@v2
+      #   with:
+      #     context: ./3.6-alpine/
+      #     push: true
+      #     platforms: linux/amd64,linux/arm64
+      #     tags: docker.io/mbe1224/python-ci-tools:3.6-alpine
+      #     cache-from: type=registry,ref=mbe1224/python-ci-tools:3.6-buildcache
+      #     cache-to: type=registry,ref=mbe1224/python-ci-tools:3.6-buildcache,mode=max          

@@ -1,6 +1,6 @@
-FROM python:3.6-alpine
+FROM python:3.7-alpine
 LABEL org.opencontainers.image.authors="mihai.bogdan.eugen@gmail.com"
-LABEL version="0.1.0"
+LABEL version="1.0.0"
 
 RUN apk add --no-cache libxml2 libxml2-dev libxslt-dev gcc build-base --virtual build-dependencies \
   && pip install pytest \

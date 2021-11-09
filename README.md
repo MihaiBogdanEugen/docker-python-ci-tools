@@ -9,7 +9,6 @@ These images contain the following packages:
 * nose
 * nose-parameterized
 * parameterized
-* lxml
 * isodate
 * isodate2
 * pytz
@@ -21,6 +20,10 @@ The images are stored on [Docker Hub](https://hub.docker.com/r/mbe1224/python-ci
 Available tags:
 
 * `3.6`, `3.6-alpine`
+* `3.7`, `3.7-alpine`
+* `3.8`, `3.8-alpine`
+* `3.9`, `3.9-alpine`
+* `3.10`, `3.10-alpine`
 
 ## License
 
